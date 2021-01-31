@@ -3,7 +3,7 @@ My album photo is a **web site**  where you can send your photo.
 Installation
 ------------
 
-* git clone xxx
+* git clone **https://github.com/bglevon/AlbumPhoto.git**
 * composer install
 * migration
 * Launch

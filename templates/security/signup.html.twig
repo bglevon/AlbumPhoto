@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    <div class="box">
+            {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+
+            {% if app.user %}
+                <div class="mb-3">
+                    Bonjour, {{ app.user.username }}, <a href="{{ path('app_logout') }}">>Déconnexion</a>
+                </div>
+            {% else %}
+                <h1 class="h3 mb-3 font-weight-normal">Inscription</h1>
+                {{ form_start(form) }}
+
+                {{ form_label(form.firstname) }}
+                {{ form_widget(form.firstname) }}
+                {{ form_errors(form.firstname) }}
+
+                {{ form_label(form.lastname) }}
+                {{ form_widget(form.lastname) }}
+                {{ form_errors(form.lastname) }}
+
+                {{ form_label(form.email) }}
+                {{ form_widget(form.email) }}
+                {{ form_errors(form.email) }}
+
+                {{ form_label(form.password) }}
+                {{ form_widget(form.password) }}
+                {{ form_errors(form.password) }}
+
+                <div class="upload-btn">
+                    {{ form_row(form.signupBtn) }}
+                </div>
+                <a href="{{ path('app_login') }}">Vous avez un compte ?</a>
+
+                {{ form_end(form) }}
+            {% endif %}
+
+    </div>
+{% endblock %}

@@ -1,0 +1,4 @@
+twig:
+    globals:
+        photos_directory: '%photos_directory%'
+    default_path: '%kernel.project_dir%/templates'

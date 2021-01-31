@@ -1,0 +1,84 @@
+.myButton {
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:1px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.box {
+	width: 300px;
+	margin: 120px auto;
+}
+
+.upload-btn {
+	float: right;
+	margin-top: 20px;
+}
+
+.dlt-photo-link {
+	display: inline-block;
+	float: right;
+	margin: 10px 20px 50px 0;
+}
+
+.profil-box {
+	margin: 100px 100px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.navigation {
+	text-align: center;
+	margin: 50px 0 50px 0;
+}
+
+.navigation .pagination span {
+	font-size: 15px;
+}
+
+.navigation .pagination .current {
+	font-weight: bold;
+}
+
+.count {
+    margin-top: 50px;
+}
+
+.msg {
+    padding: 5px;
+}
+
+.msg-ok {
+	background: #e9f5e9;
+}
+
+.msg-error {
+	background: #f5e9ea;
+}
+
+label {
+	display: inline-block;
+	width: 150px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+	height: 28px;
+	width: 100%;
+	margin: 5px 0 10px 0;
+}

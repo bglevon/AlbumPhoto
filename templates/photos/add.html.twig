@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout photo{% endblock %}
+
+{% block body %}
+    <div class="box">
+        <h1>Ajout photos</h1>
+
+        {{ form_start(form) }}
+
+        {{ form_label(form.title) }}
+        {{ form_widget(form.title) }}
+        {{ form_errors(form.title) }}
+
+        {{ form_label(form.photo) }}
+        {{ form_widget(form.photo) }}
+        {{ form_errors(form.photo) }}
+
+        <div class="upload-btn">
+            {{ form_row(form.upload) }}
+        </div>
+
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

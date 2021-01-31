@@ -1,0 +1,270 @@
+/*
+
+Flip Turn Template
+
+http://www.templatemo.com/tm-413-flip-turn
+
+	1. CSS resets
+	2. Universal styles
+	3. Portfolio styles
+	4. CSS3 flip
+	5. Timeline styles
+	6. Contact styles
+	7. Media queries
+*/
+
+
+/* 1. CSS resets
+--------------------------------------*/
+p {	margin: 0; }
+ul { padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+/*  2. Universal styles
+--------------------------------------*/
+
+* {	font-family: 'Open Sans', sans-serif; }
+body { background-color: #eee; }
+
+h1 {
+	font-size: 30px;
+	line-height: 1.5;
+	text-shadow: 1px 1px 1px rgba(167, 221, 255, 0.5);
+	margin: 0 0 10px 0;
+}
+
+h2 { color: #909090; }
+
+h1, h2, h3 { font-weight: 300; }
+
+h2, h3, footer i { font-size: 18px; }
+
+p, form, ul { font-size: 14px; }
+
+.subtitle { font-weight: bold; color: #909090; }
+
+.portfolio-group .detail p { font-size: 12px; }
+
+footer p, address {	font-size: 14px; }
+
+#templatemo_timeline .time_line_paragraph h1 { font-size: 24px; }
+
+#logo a {
+	color: #909090;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#logo, #templatemo_timeline i {	font-size: 50px; }
+
+.main-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0 0 5px rgba(107, 110, 112, 0.4);
+}
+
+.content-container {
+	box-sizing: border-box;
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+}
+.content { padding-top: 15px; }
+
+.main-nav { border-bottom: #DDDDDD 1px solid; }
+
+.main-nav li {
+	margin-right: 2px;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 1px 1px 1px rgba(80, 80, 80, 0.4);
+}
+
+.main-nav li a { display: block; padding: 12px 24px; }
+
+.main-nav li.active { background-color: #A7DDFF; padding: 12px 24px; }
+
+.main-nav li a:hover { background-color: #A7DDFF; }
+
+nav {
+	overflow: hidden;
+	padding: 20px 30px 20px 20px;
+}
+
+ul.nav {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+ul.nav li {	cursor: pointer; display: inline-block; }
+ul.nav li.active {	cursor: default; }
+ul.nav li, .portfolio-group .detail h3, .templatemo_form button {
+	text-transform: uppercase;
+}
+
+p { line-height: 1.8em; }
+a { color: black; }
+i {	color: #909090; }
+footer {
+	margin-top: 10px;
+	padding: 15px 20px 10px 20px;
+	overflow: hidden;
+	background-color: rgba(237, 237, 237, 0.4);
+	clear: both;
+}
+footer p {
+	float: left;
+	margin-top: 6px;
+	color: #909090;
+}
+footer i {
+	display: inline-block;
+	padding: 5px;
+}
+footer i:hover, footer i:active { color: #A7DDFF; }
+
+ul.checkmark li:before { /*http://astronautweb.co/snippet/font-awesome/*/
+	font-family: 'FontAwesome';
+	content: '\f058';
+	margin:0 5px 0 -15px;
+	color: #929292;
+}
+ul.pad-left {
+	overflow: auto;
+	padding-left: 30px;
+	line-height: 1.8em;
+}
+img.shadow { box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5); }
+p.justify { text-align: justify; }
+.templatemo-detail img {
+	max-width: 250px;
+	width: 100%;
+	height: auto;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.fa { margin: 6px; }
+.left { float: left; }
+.right { float: right; }
+.center-text { text-align: center; }
+
+/* 3. Portfolio styles
+-----------------------------------------*/
+#portfolio-content {
+	margin:  0 auto;
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+#portfolio-content img {
+	width: 250px;
+	height: 250px;
+}
+.portfolio-group {
+	display: inline-block;
+	width: 250px;
+	height: 125px;
+	position: relative;
+	margin: 15px 10px;
+}
+.portfolio-group img {
+	width:100%;
+	height:100%;
+	position:absolute;
+	display:block;
+	box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+}
+.portfolio-group .detail {
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+}
+.portfolio-group .detail h3 {
+	padding: 15px 10px 0 10px;
+}
+.portfolio-group .detail p {
+	text-align: justify;
+	padding: 10px;
+	line-height: 1.8em;
+}
+.portfolio-item {
+	display:block;
+	width:100%;
+	height:100%;
+}
+.portfolio-item .btn {
+	width: 80px;
+	height: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	background-color: rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+	-ms-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+	box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+}
+.portfolio-item .btn:hover { background-color: #ddd; }
+.pagination { width: 100%; }
+.pagination li {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: white;
+	-webkit-box-shadow: 1px 1px 1px rgba(51,51,51,0.4);
+	-ms-box-shadow: 1px 1px 1px rgba(51,51,51,0.4);
+	box-shadow: 1px 1px 1px rgba(51,51,51,0.4);
+	margin-right: 10px;
+	border: 1px solid rgba(44, 44, 44, 0.1);
+}
+.pagination li:last-child {	margin-right: 0; }
+.pagination li.active, .pagination li:hover { background-color: #A7DDFF; }
+
+/*  4. CSS3 flip
+	http://stackoverflow.com/questions/13474210/css3-3d-flip-animation-ie10-transform-origin-preserve-3d-workaround
+	http://www.cssplay.co.uk/menu/css3-3d-card.html
+	http://cssdeck.com/labs/gddxuzki
+-------------------------------------------------------------------------------------*/
+.portfolio-group .portfolio-item img,  .portfolio-group .portfolio-item .detail {
+	-webkit-transition:0.5s ease-in-out;
+	-moz-transition:0.5s ease-in-out;
+	transition:0.5s ease-in-out;
+}
+.portfolio-group .detail {
+	-moz-transform:perspective(800px) rotateY(180deg);
+	-webkit-transform:perspective(800px) rotateY(180deg);
+	transform:perspective(800px) rotateY(180deg);
+}
+.portfolio-group img {
+	-moz-transform:perspective(800px) rotateY(0deg);
+	-webkit-transform:perspective(800px) rotateY(0deg);
+	transform:perspective(800px) rotateY(0deg);
+}
+.portfolio-item:hover > .detail {
+	-moz-transform:perspective(800px) rotateY(0);
+	-webkit-transform:perspective(800px) rotateY(0);
+	transform:perspective(800px) rotateY(0);
+}
+.portfolio-item:hover > img {
+	-webkit-transform:perspective(800px) rotateY(-179.9deg);
+	-moz-transform:perspective(800px) rotateY(-179.9deg);
+	transform:perspective(800px) rotateY(-179.9deg);
+}
+.portfolio-group img, .portfolio-group .detail {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}

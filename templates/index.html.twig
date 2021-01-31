@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout photo{% endblock %}
+
+{% block body %}
+    <h1>Page d'accueil</h1>
+
+    {% if app.user %}
+        <div class="profil-box">
+            Bienvenue, {% if app.user.email %}{{app.user.email}}{% else %}invité{% endif %}
+        </div>
+    {% else %}
+        <div class="profil-box">
+            Bienvenue, invité,<br>connecter-vous pour pouvoir ajouter vos photo dans votre album.
+        </div>
+    {% endif %}
+{% endblock %}

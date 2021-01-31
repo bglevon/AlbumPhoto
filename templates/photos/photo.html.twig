@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout photo{% endblock %}
+
+{% block body %}
+    <h1>{{photoBySlug.title}}</h1>
+
+    <img src="{{asset('uploads/photos/' ~ photoBySlug.filename)}}" alt="{{photoBySlug.title}}" width="100%">
+
+    <div class="dlt-photo-link">
+        {{form_start(formRemove)}}
+            {{ form_row(formRemove.remove) }}
+        {{form_end(formRemove)}}
+    </div>
+{% endblock %}
